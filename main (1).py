@@ -28,3 +28,8 @@ with os.scandir('Aula22') as entrada:
     for arquivo in entrada:
         if arquivo.is_file():
             print(f'Arquivo encontrado: {arquivo.name}')
+
+**Exercício 6: Copiar Arquivos em um Diretório** 
+#Usar dois parametros _ 1 nome do arquivo ou pasta original que sera copiado / 2 nome que deseja colocar no arquivo ou pasta
+import shutil
+shutil.copytree('original', 'nome da copia')
